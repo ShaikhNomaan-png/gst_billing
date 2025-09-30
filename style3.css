@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #b1dcff, #3ba7ff); /* Gradient background */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Search by Date Range Form */
+.date-search {
+    margin-bottom: 30px;
+}
+
+.date-search h3 {
+    font-size: 24px;
+    color: #e07400;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px px rgba(0, 0, 0, 0.3);
+}
+
+.date-search form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.date-search label {
+    font-size: 16px;
+    color: #333;
+}
+
+.date-search input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.date-search input[type="submit"] {
+    background-color: #002f7a;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.date-search input[type="submit"]:hover {
+    background-color: #8e2de2;
+}
+
+/* Invoice List */
+.invoice-list h3 {
+    font-size: 24px;
+    color: #e07400;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #002f7a;
+    color: #fff;
+}
+
+table td a {
+    color: #002f7a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+table td a:hover {
+    color: #8e2de2;
+}
+
+/* Button Styles */
+button {
+    background-color: #4a00e0;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8e2de2;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .date-search h3 {
+        font-size: 20px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .date-search form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .invoice-list h3 {
+        font-size: 18px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
