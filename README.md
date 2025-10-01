@@ -1,5 +1,7 @@
-# gst_billing
-I developed gst_billing
+# GST billing system
+Developed a dynamic GST billing system using HTML, CSS, PHP, and MySQL, enabling seamless retrieval and display of invoice details from
+the database. Implemented a responsive and visually appealing frontend with print functionality, enhancing user experience for invoice
+management and navigation.
 
 
 ![GST Billing Banner](https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80)
